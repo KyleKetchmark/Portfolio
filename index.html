@@ -17,99 +17,166 @@
 
 <body>
     <!-- Navbar -->
-    <nav id="navbar" class="navbar fixed-top">
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link" href="#header">About Me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact Me</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- Main Header -->
-    <section id="header">
-        <div id="name">
-            <div class="name-header">
-                <h2>Kyle Ketchmark</h2>
-                <br>
-                <h2>Front End Development Student</h2>
+    <div id="landing-page">
+        <nav id="navbar" class="navbar fixed-top">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-me">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Main Header -->
+        <section id="header">
+            <div id="name">
+                <div class="name-header">
+                    <h2>Kyle Ketchmark</h2>
+                    <br>
+                    <h2>Front End Development Student</h2>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <!-- About Me -->
+    <div id="about-header">
+        <h4>A little about myself...</h4>
+    </div>
     <section id="about-me">
-        <div id="about-me-info">
+        <div id="about-me-container">
             <div id="about-info">
-                <h4>About Me:</h4>
+                <h4>Welcome to my portfolio!</h4>
                 <p class="lead">
-                    Current student at Eleven Fifty Academy in the web development program. Becoming fluent in HTML,
-                    CSS, JavaScript, React, PostgreSQL.
+                    I wish I could say web development has always been a passion of mine, however it was recently in the past year it really hit me. 
+                    My "aha" moment struck while I was in Kenya due to a military obligation. Local Kenyan villagers had access to the internet, smartphones, and Facebook, 
+                    nonetheless they still walked 3 miles to get water. Physical infrastructure took a lot of money and time to come to fruition, however those local citizens 
+                    had access to what we all do in first world countries, <b><i>an equal playing field</i></b> to start an online business and generate commerce digitally.
+                    It hadn't occured to me for a long time that coding is a way to express and impact the world, one keystroke at a time. All this intuition has led me to attending Eleven Fifty Academy (2022 Web Development Grad) to hone my technical skill-set utilizing these technologies: HTML, CSS, JavaScript, React, PostgreSQL, TypeScript, and Node.js. I haven’t looked back and have been building ever since… 
+                    Ultimately I’m looking to make a positive impact at an organization that I can help develop the next revolution of future products and services.
                 </p>
                 <br>
-                <p class="lead">
-                    Motivated to learn, grow and excel in the web/software developer community.
-                </p>
+                <p id="lead">Currently located in San Francisco, CA</p>
+                <div id="codelang">
+                    <h4>Languages</h4>
+                    <img src="https://img.icons8.com/ios/50/000000/html.png" />
+                    <img src="https://img.icons8.com/ios/50/000000/css.png" />
+                    <img src="https://img.icons8.com/ios/50/000000/javascript--v1.png" />
+                    <img src="https://img.icons8.com/ios-filled/50/000000/react-native.png" />
+                    <img src="https://img.icons8.com/ios/50/000000/postgreesql.png" />
+                    <img src="https://img.icons8.com/windows/50/000000/node-js.png" />
+                    <img src="https://img.icons8.com/ios/50/000000/typescript.png" />
+                </div>
             </div>
-            <div id="current-info">
-                <div>
-                    <img src="./portfolio-assets/LinkedIn Prof Pic.jpeg" alt="Personal Picture">
+        </div>
+        <div id="visual-container">
+            <div id="visual-info">
+                <div id="current-info" class="myinfo-bubble">
+                    <div>
+                        <img src="./portfolio-assets/LinkedIn Prof Pic.jpeg" alt="Personal Picture">
+                    </div>
+                    <div>
+                        <p>Student at Eleven Fifty Academy</p>
+                    </div>
+                    <div id="icons">
+                        <a href="https://github.com/KyleKetchmark" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <br>
+                        <a href="https://www.linkedin.com/in/kyle-ketchmark-01913b134/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <p>Student at Eleven Fifty Academy</p>
+                <div id="military-info" class="myinfo-bubble">
+                    <div>
+                        <img src="./portfolio-assets/militaryimg.png" alt="Personal Picture">
+                    </div>
+                    <div>
+                        <p>Army Veteran</p>
+                        <p>Infantryman Team Leader</p>
+                    </div>
                 </div>
-                <div id="icons" style="background-color: whitesmoke;">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/KyleKetchmark">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/kyle-ketchmark-01913b134/">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                    </ul>
+                <div id="personal-info" class="myinfo-bubble">
+                        <div>
+                            <img src="./portfolio-assets/funcle.png" alt="Personal Picture">
+                        </div>
+                        <div>
+                            <p>Funcle</p>
+                            <p>Concatination of "Fun" and "Uncle" :)</p>
+                        </div>
                 </div>
             </div>
         </div>
     </section>
+    <br>
     <!-- Projects Section-->
     <section id="projects">
         <div class="grid">
+            <h2>My Projects:</h2>
+        </div>
+        <div class="grid">
             <div class="g-col-6" id="css-creature">
-                <a href="https://codepen.io/KyleKetchmark/pen/dyzvQWB" target="_blank"><img
-                        src="./portfolio-assets/Loomdart.png" alt="Loomdart"></a>
+                <img src="./portfolio-assets/Loomdart.png" alt="Loomdart" title="CSS Creature Creation">
+                <div class="proj-label">
+                    <a href="https://codepen.io/KyleKetchmark/pen/dyzvQWB" target="_blank">
+                        <p class="proj-label">CSS only Creature Creation</p>
+                    </a>
+                </div>
             </div>
             <div class="g-col-6" id="static-layout">
-                <a href="https://kyleketchmark.github.io/WP-Replica-WD-1150-/" target="_blank"><img
-                        src="./portfolio-assets/grammarly icon.png" alt="Grammarly Logo"></a>
+                <img src="./portfolio-assets/grammarly icon.png" alt="Grammarly Logo">
+                <div class="proj-label">
+                    <a href="https://kyleketchmark.github.io/WP-Replica-WD-1150-/" target="_blank">
+                        <p class="proj-label">Webpage Reacreation Grammarly</p>
+                    </a>
+                </div>
             </div>
             <div class="g-col-6" id="pokemon-api">
-                <a href="https://kyleketchmark.github.io/Pokemon-API/" target="_blank"><img
-                        src="./portfolio-assets/Poke_Ball.png" alt="Pokeball"></a>
+                <img src="./portfolio-assets/Poke_Ball.png" alt="Pokeball">
+                <div class="proj-label">
+                    <a href="https://kyleketchmark.github.io/Pokemon-API/" target="_blank">
+                        <p class="proj-label">Pokemon API Project</p>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="grid">
             <div class="g-col-6" id="nasa-api">
-                <a href="" target="_blank"><img src="./portfolio-assets/NASA_logo.svg.png" alt="NASA Logo"></a>
+                <img src="./portfolio-assets/NASA_logo.svg.png" alt="NASA Logo">
+                <div class="proj-label">
+                    <a href="https://nasa-api-2.firebaseapp.com/" target="_blank">
+                        <p class="proj-label">NASA API Web Application</p>
+                    </a>
+                </div>
             </div>
             <div class="g-col-6" id="blue-badge">
-                <a href="" target="_blank"><img src="./portfolio-assets/badges-webdev_blue.png"
-                        alt="EFA Blue Badge"></a>
+                <img src="./portfolio-assets/badges-webdev_blue.png" alt="EFA Blue Badge">
+                <div class="proj-label">
+                    <a href="https://abk-health-is-wealth-client.herokuapp.com/" target="_blank">
+                        <p class="proj-label">React Nutrition Tracker - Full Stack</p>
+                    </a>
+                </div>
             </div>
             <div class="g-col-6" id="red-badge">
-                <a href="" target="_blank"><img src="./portfolio-assets/badges-webdev_red.png" alt="EFA Red Badge"></a>
+                <img src="./portfolio-assets/badges-webdev_red.png" alt="EFA Red Badge" title="Red Badge">
+                <div class="proj-label">
+                    <a href="https://ketch-twournal-client.herokuapp.com/" target="_blank">
+                        <p class="proj-label">Twournal - Full Stack Final Project</p>
+                    </a>
+                </div>
             </div>
         </div>
-        <div id="resume-link">
-            <h2><a href="Kyle_Ketchmark_Resume_2.PDF">Download my resume!</a></h2>
-        </div>
     </section>
+    <br>
+    <!--Resume-->
+    <div id="resume-link">
+        <h2><a href="./portfolio-assets/Kyle_Ketchmark_Resume_2.PDF" download target="_blank" rel="noreferrer noopener"
+                alt="Resume">Download my resume here!</a></h2>
+    </div>
     <!-- Contact Section -->
     <section id="contact">
         <div>
@@ -131,7 +198,7 @@
     <!-- Footer -->
     <section id="footer">
         <div class="footer">
-            <p>Copyright 2021 - Professional Portfolio by Kyle Ketchmark</p>
+            <p>Copyright 2022 - Professional Portfolio by Kyle Ketchmark</p>
         </div>
     </section>
     <script src="portfolio.js"></script>

@@ -1,10 +1,10 @@
 body {
     max-width: 100%;
     height: auto;
-    background-color: #2D2627;
-    background-image: url(./portfolio-assets/WallpaperDog-17157656.jpg);
+    background-color: black;
     z-index: -1;
     background-repeat: none;
+    position: sticky;
 }
 
 #navbar {
@@ -13,8 +13,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 15px;
 }
 
 .nav {
@@ -26,13 +25,33 @@ body {
 }
 
 .nav-item {
-    background-color: rgba(255, 255, 255, 0.377);
-    border-radius: 100px;
-    padding: 10px;
+    border-radius: 0px;
+    padding: 5px;
+    border: 2px solid antiquewhite;
+    margin: 5px;
 }
 
 .nav-link {
-    color: rgb(255, 255, 255);
+    display: block;
+    padding: 0.5rem 1rem;
+    color: antiquewhite;
+    text-decoration: none;
+    transition: 
+    color .15s ease-in-out, 
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #607D84;
+}
+
+#landing-page {
+    background-image: url(./portfolio-assets/portfolio-background.jpeg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 650px;
+    position: static;
 }
 
 #header {
@@ -47,7 +66,7 @@ body {
     display: contents;
     margin-top: auto;
     font-size: 60px;
-    font-family: "Gill Sans", sans-serif;
+    font-family: "Lucida Console", monospace;
     color: antiquewhite;
 }
 
@@ -60,34 +79,63 @@ body {
 }
 
 .name-header h2 {
-    background-color: rgba(0, 0, 0, 0.418);
+    background-color: none;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid antiquewhite; /* The typwriter cursor */
+    white-space: pre-wrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 1s step-end infinite;
 }
 
-#icons ul{
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: antiquewhite; }
+}
+
+#icons {
     color: whitesmoke;
 }
 
 i {
     color: black;
-    height: 5px;
-    width: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+#about-header {
+    text-align: center;
+    font-size: 60px;
+    font-family: "Lucida Console", monospace;
+    color: antiquewhite;
 }
 
 #about-me {
-    background-color: whitesmoke;
-    width: 40em;
+    width: 100%;
     height: auto;
     margin: auto;
     display: flex;
     font-family: "Gill Sans", sans-serif;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 10vh;
+    justify-content: space-evenly;
 }
 
-#about-me-info {
+#about-me-container {
     display: flex;
     font-family: "Gill Sans", sans-serif;
     padding: 10px;
+    background-color: antiquewhite;
+    align-items: center;
+    border-radius: 10px;
+    border: 5px solid antiquewhite;
+    width: 30em;
 }
 
 #about-info {
@@ -95,25 +143,43 @@ i {
 
 }
 
-#current-info {
+#visual-container {
+    padding: 10px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 
-#current-info img {
+#visual-info {
+    
+}
+
+.myinfo-bubble {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    background-color: antiquewhite;
+    width: 285px;
+    border-radius: 10px;
+}
+
+.myinfo-bubble img {
     margin: auto;
     margin-top: 10px;
     margin-right: 10px;
-    width: 100px;
-    height: 100px;
-    border-radius: 53px;
+    width: 150px;
+    height: 150px;
+    border-radius: 70px;
     box-shadow: 10px black;
 }
 
-#current-info p {
+.myinfo-bubble p {
     margin-top: 15px;
     padding-top: 5px;
     padding-left: 15px;
+    font-size: 20px;
 }
 
 #projects {
@@ -122,31 +188,39 @@ i {
     height: auto;
     align-content: center;
     font-family: "Gill Sans", sans-serif;
-    flex-direction: inherit;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 2em;
+    color: antiquewhite;
 }
 
 .grid {
     display: flex;
-    width: auto;
-    height: auto;
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin: inherit;
-    padding-top: 3rem;
+    margin: 18px;
+    padding-top: 0rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+br {
+    color: antiquewhite;
 }
 
 .g-col-6 {
-    width: 16vw;
+    width: 25vw;
     height: 25vh;
-    color: whitesmoke;
+    color: antiquewhite;
     display: flex;
     justify-content: center;
     flex-direction: row;
+    position: relative;
+    border: solid 1px antiquewhite;
+    padding: 10px;
 }
 
 .g-col-6 a img {
@@ -154,12 +228,45 @@ i {
     max-height:100%;
 }
 
+.proj-label {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 5px;
+    bottom: 5px;
+    left: 2em;
+    right: 2em;
+    background: #040406;
+    color: antiquewhite;
+    visibility: hidden;
+    opacity: 50%;
+    transition: opacity .2s, visibility .2s;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.g-col-6:hover .proj-label {
+    visibility: visible;
+    opacity: 80%;
+  }
+
 #css-creature img {
     border-radius: 15px;
 }
 
+#resume-link {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: #040406;
+}
+
 #resume-link a{
-    color: antiquewhite
+    color: antiquewhite;
+    font-size: smaller;
+    font-weight: lighter;
 }
 
 #contact {
@@ -171,6 +278,8 @@ i {
     align-items: center;
     justify-content: center;
     font-family: "Gill Sans", sans-serif;
+    background-color: #040406;
+    margin-bottom: 25px;
 }
 
 form {
@@ -185,27 +294,29 @@ form label {
     display: flex;
     flex-direction: column;
     padding: 3px;
+    color: antiquewhite;
 }
 
 form button {
     margin-top: 10px;
     padding: 2px;
     width: 90px;
-    border:rgb(255, 255, 255);
+    border:antiquewhite;
     border-radius: 10px;
+    background-color: antiquewhite;
 }
 
 form button:hover {
-    color: green;
+    color: #607D84;
 }
 
 #footer {
-    color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.068);
+    color: #000000;
+    background-color: antiquewhite;
     width: 100%;
-    height: 40px;
-    margin-top: 10px;
+    height: 32px;
     text-align: center;
     font-family: "Gill Sans", sans-serif;
     font-weight: lighter;
+    padding: 5px;
 }
