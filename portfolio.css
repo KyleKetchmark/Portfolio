@@ -43,7 +43,7 @@ body {
 }
 
 .nav-link:hover {
-    color: rgb(15, 15, 15);
+    color: rgb(161, 161, 161);
 }
 
 #landing-page {
@@ -145,17 +145,12 @@ i {
 
 #about-info {
     padding: 20px;
-
 }
 
 #visual-container {
     padding: 10px;
     display: flex;
     align-items: center;
-}
-
-#visual-info {
-    
 }
 
 .myinfo-bubble {
