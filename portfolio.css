@@ -1,7 +1,7 @@
 body {
     max-width: 100%;
     height: auto;
-    background-color: black;
+    background-color: rgb(15, 15, 15);
     z-index: -1;
     background-repeat: none;
     position: sticky;
@@ -43,14 +43,14 @@ body {
 }
 
 .nav-link:hover {
-    color: #607D84;
+    color: rgb(15, 15, 15);
 }
 
 #landing-page {
     background-image: url(./portfolio-assets/portfolio-background.jpeg);
-    background-repeat: no-repeat;
+    background-repeat: round;
     width: 100%;
-    height: 650px;
+    height: 100%;
     position: static;
 }
 
@@ -115,6 +115,11 @@ i {
     font-size: 60px;
     font-family: "Lucida Console", monospace;
     color: antiquewhite;
+    padding-top: 5%;
+}
+
+.h4, h4 {
+    height: 5%;
 }
 
 #about-me {
@@ -236,7 +241,7 @@ br {
     bottom: 5px;
     left: 2em;
     right: 2em;
-    background: #040406;
+    background: rgb(15, 15, 15);
     color: antiquewhite;
     visibility: hidden;
     opacity: 50%;
@@ -260,7 +265,7 @@ br {
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    background-color: #040406;
+    background-color: rgb(15, 15, 15);
 }
 
 #resume-link a{
@@ -278,7 +283,7 @@ br {
     align-items: center;
     justify-content: center;
     font-family: "Gill Sans", sans-serif;
-    background-color: #040406;
+    background-color: rgb(15, 15, 15);
     margin-bottom: 25px;
 }
 
@@ -311,7 +316,7 @@ form button:hover {
 }
 
 #footer {
-    color: #000000;
+    color: rgb(15, 15, 15);
     background-color: antiquewhite;
     width: 100%;
     height: 32px;
