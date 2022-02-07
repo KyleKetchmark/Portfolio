@@ -7,13 +7,23 @@ body {
     position: sticky;
 }
 
+#landing-page {
+    background-image: url(./portfolio-assets/portfolio-background.jpeg);
+    background-repeat: round;
+    max-width: 100%;
+    height: auto;
+    position: sticky;
+    margin-bottom: 5%;
+}
+
 #navbar {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: flex-end;
-    padding: 15px;
+    justify-content: space-between;
+    padding: 5%;
+    flex-direction: row;
 }
 
 .nav {
@@ -24,11 +34,32 @@ body {
     list-style: none;
 }
 
+#nav-icons {
+    color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.left-nav-links {
+    margin-left: 5%;
+}
+
 .nav-item {
-    border-radius: 0px;
-    padding: 5px;
-    border: 2px solid antiquewhite;
     margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid antiquewhite;
+}
+
+.nav-click {
+    margin: 5px;
+    padding: 5px;
+    background-color: antiquewhite;
 }
 
 .nav-link {
@@ -46,48 +77,39 @@ body {
     color: rgb(161, 161, 161);
 }
 
-#landing-page {
-    background-image: url(./portfolio-assets/portfolio-background.jpeg);
-    background-repeat: round;
-    width: 100%;
-    height: 100%;
-    position: static;
-}
 
 #header {
     margin: auto;
     width: 100%;
-    height: 300px;
+    height: inherit;
     display: flex;
-    justify-content: center;
-}
-
-#name {
-    display: contents;
-    margin-top: auto;
-    font-size: 60px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
     font-family: "Lucida Console", monospace;
     color: antiquewhite;
+    justify-content: center;
+    padding: 5%;
+}
+
+.name {
+    display: inline-block;
+    margin-top: auto;
+    font-size: 24px;
+    font-family: "Lucida Console", monospace;
 }
 
 .name-header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 25px;
-}
-
-.name-header h2 {
-    background-color: none;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    width: 0;
+    overflow: hidden;
     border-right: .15em solid antiquewhite; /* The typwriter cursor */
-    white-space: pre-wrap; /* Keeps the content on a single line */
+    white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-    typing 3.5s steps(40, end),
-    blink-caret 1s step-end infinite;
+    typing 3.5s steps(40, end) forwards,
+    blink-caret 1s infinite;
+    text-align: center;
 }
 
 @keyframes typing {
@@ -120,6 +142,7 @@ i {
 
 .h4, h4 {
     height: 5%;
+    text-align: center;
 }
 
 #about-me {
@@ -128,38 +151,73 @@ i {
     margin: auto;
     display: flex;
     font-family: "Gill Sans", sans-serif;
-    padding: 10vh;
+    padding: 5%;
     justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
 }
 
 #about-me-container {
     display: flex;
     font-family: "Gill Sans", sans-serif;
-    padding: 10px;
+    padding: 2%;
     background-color: antiquewhite;
     align-items: center;
     border-radius: 10px;
     border: 5px solid antiquewhite;
-    width: 30em;
+    width: 100%;
 }
 
 #about-info {
     padding: 20px;
 }
 
-#visual-container {
-    padding: 10px;
+#lead {
+    text-align: center;
+}
+
+#codelang {
+    text-decoration: underline;
+}
+
+#languages {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
 }
 
+#visual-container {
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#visual-info {
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
 .myinfo-bubble {
+    margin: 5%;
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 2%;
     background-color: antiquewhite;
     width: 285px;
     border-radius: 10px;
@@ -173,13 +231,18 @@ i {
     height: 150px;
     border-radius: 70px;
     box-shadow: 10px black;
+    border: 2px solid black;
 }
 
 .myinfo-bubble p {
-    margin-top: 15px;
-    padding-top: 5px;
-    padding-left: 15px;
+    margin-top: 2%;
+    padding-top: 2%;
     font-size: 20px;
+    text-align: center;
+}
+
+.visualImg {
+    border-radius: 70px;
 }
 
 #projects {
@@ -220,7 +283,7 @@ br {
     flex-direction: row;
     position: relative;
     border: solid 1px antiquewhite;
-    padding: 10px;
+    padding: 5%;
 }
 
 .g-col-6 a img {
@@ -232,10 +295,10 @@ br {
     position: absolute;
     width: auto;
     height: auto;
-    top: 5px;
-    bottom: 5px;
-    left: 2em;
-    right: 2em;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
     background: rgb(15, 15, 15);
     color: antiquewhite;
     visibility: hidden;
@@ -272,21 +335,22 @@ br {
 #contact {
     color: antiquewhite;
     width: 100%;
-    height: 270px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: "Gill Sans", sans-serif;
     background-color: rgb(15, 15, 15);
-    margin-bottom: 25px;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 2%;
     padding: inherit;
 }
 
@@ -295,6 +359,14 @@ form label {
     flex-direction: column;
     padding: 3px;
     color: antiquewhite;
+}
+
+form label input {
+    background-color: antiquewhite;
+}
+
+form label textarea {
+    background-color: antiquewhite;
 }
 
 form button {

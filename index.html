@@ -12,70 +12,87 @@
     <script src="https://kit.fontawesome.com/ad046cc437.js" crossorigin="anonymous"></script>
     <!--Porfolio Style Sheet-->
     <link rel="stylesheet" href="portfolio.css">
-    <title>Welcome!</title>
+    <title>Kyle Ketchmark's Portfolio</title>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <div id="landing-page">
+    <!-- Main Landing Page -->
+    <section id="landing-page">
+        <!-- Navbar-->
         <nav id="navbar" class="navbar fixed-top">
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about-me">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Me</a>
-                </li>
-            </ul>
+            <div id="nav-icons">
+                <a class="left-nav-links"  href="https://github.com/KyleKetchmark" target="_blank">
+                    <img src="./portfolio-assets/icons8-github-50.png" alt="GitHub" title="GitHub Page"></img>
+                </a>
+                <br>
+                <a class="left-nav-links" href="https://www.linkedin.com/in/kyle-ketchmark-01913b134/" target="_blank">
+                    <img src="./portfolio-assets/icons8-linkedin-50.png" alt="LinkedIn" title="LinkedIn Page"></img>
+                </a>
+            </div>
+            <div id='links'>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <!-- Main Header -->
-        <section id="header">
-            <div id="name">
+        <div id="header">
+            <div class="name">
+                <h2>Kyle Ketchmark</h2>
+            </div>
+            <div class="name">
                 <div class="name-header">
-                    <h2>Kyle Ketchmark</h2>
-                    <br>
-                    <h2>Junior Front End Developer</h2>
+                    <p>Junior Web Developer</p>
                 </div>
             </div>
-        </section>
-    </div>
-    <!-- About Me -->
-    <div id="about-header">
+        </div>
+    </section>
+    <!-- About Me Header-->
+    <section id="about-header">
         <h4>A little about myself...</h4>
-    </div>
+    </section>
+    <!--About Me Info-->
     <section id="about-me">
         <div id="about-me-container">
             <div id="about-info">
                 <h4>Welcome to my portfolio!</h4>
                 <p class="lead">
-                    I wish I could say web development has always been a passion of mine, however it was recently in the past year it really hit me. 
-                    My "aha" moment struck while I was in Kenya due to a military obligation. Local Kenyan villagers had access to the internet, smartphones, and Facebook, 
-                    nonetheless they still walked 3 miles to get water. Physical infrastructure took a lot of money and time to come to fruition, however those local citizens 
-                    had access to what we all do in first world countries, <b><i>an equal playing field</i></b> to start an online business and generate commerce digitally.
-                    It hadn't occured to me for a long time that coding is a way to express and impact the world, one keystroke at a time. All this intuition has led me to attending Eleven Fifty Academy (2022 Web Development Grad) to hone my technical skill-set utilizing these technologies: HTML, CSS, JavaScript, React, PostgreSQL, TypeScript, and Node.js. I haven’t looked back and have been building ever since… 
-                    Ultimately I’m looking to make a positive impact at an organization that I can help develop the next revolution of future products and services.
+                    I'm Kyle and I have a vast interest in frontend development and technologies.
+                    I pursued that lingering feeling to align my business and technical skills together.
+                    This led me to attending Eleven Fifty Academy (2022 Web Development Grad) to hone my technical
+                    skill-set utilizing: HTML5, CSS3, JavaScript, React, PostgreSQL, TypeScript, and Node.js.
+                    I haven’t looked back and have been building ever since…
+                    Ultimately I’m looking to make a positive impact at an organization that I can help develop the next
+                    revolution of future products and services.
                 </p>
                 <br>
                 <p id="lead">Currently located in San Francisco, CA</p>
                 <div id="codelang">
-                    <h4>Languages</h4>
-                    <img src="https://img.icons8.com/ios/50/000000/html.png" />
-                    <img src="https://img.icons8.com/ios/50/000000/css.png" />
-                    <img src="https://img.icons8.com/ios/50/000000/javascript--v1.png" />
-                    <img src="https://img.icons8.com/ios-filled/50/000000/react-native.png" />
-                    <img src="https://img.icons8.com/ios/50/000000/postgreesql.png" />
-                    <img src="https://img.icons8.com/windows/50/000000/node-js.png" />
-                    <img src="https://img.icons8.com/ios/50/000000/typescript.png" />
+                    <h4>Languages:</h4>
+                    <div id='languages'>
+                        <img src="https://img.icons8.com/ios/50/000000/html.png" title="HTML5"/>
+                        <img src="https://img.icons8.com/ios/50/000000/css.png" title="CSS3"/>
+                        <img src="https://img.icons8.com/ios/50/000000/javascript--v1.png" title="JavaScript"/>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/react-native.png" title="React"/>
+                        <img src="https://img.icons8.com/ios/50/000000/postgreesql.png" title="PostgreSQL"/>
+                        <img src="https://img.icons8.com/windows/50/000000/node-js.png" title="Node.js"/>
+                        <img src="https://img.icons8.com/ios/50/000000/typescript.png" title="TypeScript"/>
+                    </div>
                 </div>
             </div>
         </div>
         <div id="visual-container">
             <div id="visual-info">
                 <div id="current-info" class="myinfo-bubble">
-                    <div>
+                    <div class="visualImg">
                         <img src="./portfolio-assets/LinkedIn Prof Pic.jpeg" alt="Personal Picture">
                     </div>
                     <div>
@@ -93,22 +110,13 @@
                     </div>
                 </div>
                 <div id="military-info" class="myinfo-bubble">
-                    <div>
+                    <div class="visualImg">
                         <img src="./portfolio-assets/militaryimg.png" alt="Personal Picture">
                     </div>
                     <div>
                         <p>Army Veteran</p>
                         <p>Infantryman Team Leader</p>
                     </div>
-                </div>
-                <div id="personal-info" class="myinfo-bubble">
-                        <div>
-                            <img src="./portfolio-assets/funcle.png" alt="Personal Picture">
-                        </div>
-                        <div>
-                            <p>Funcle</p>
-                            <p>Concatination of "Fun" and "Uncle" :)</p>
-                        </div>
                 </div>
             </div>
         </div>
@@ -174,10 +182,10 @@
     </section>
     <br>
     <!--Resume-->
-    <div id="resume-link">
+    <section id="resume-link">
         <h2><a href="./portfolio-assets/WD Resume FINAL.pdf" download target="_blank" rel="noreferrer noopener"
                 alt="Resume">Download my resume here!</a></h2>
-    </div>
+    </section>
     <!-- Contact Section -->
     <section id="contact">
         <div>
